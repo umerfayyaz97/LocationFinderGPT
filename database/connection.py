@@ -3,11 +3,13 @@ from sqlalchemy.orm import sessionmaker, Session, DeclarativeBase
 from sqlalchemy import delete
 
 
-conn_str = "postgresql://eternitywatches212:CZ4bUW6nVYyQ@ep-blue-sunset-a1zn4ibt.ap-southeast-1.aws.neon.tech/FASTAPITODO?sslmode=require"
+conn_str = "postgresql://eternitywatches212:CZ4bUW6nVYyQ@ep-blue-sunset-a1zn4ibt.ap-southeast-1.aws.neon.tech/FASTAPI?sslmode=require"
 
 engine: Engine = create_engine(conn_str, echo=True)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-db: Session = Session()
+
+# Base = declarative_base()
+# db: Session = Session()
 # Base.metadata.create_all(bind=engine)
 
 class Base(DeclarativeBase):
