@@ -1,0 +1,1 @@
+DATABASE_URL="postgresql://eternitywatches212:CZ4bUW6nVYyQ@ep-blue-sunset-a1zn4ibt.ap-southeast-1.aws.neon.tech/FASTAPI?sslmode=require"
