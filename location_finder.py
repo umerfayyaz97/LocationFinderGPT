@@ -33,7 +33,7 @@ def get_Location_or_404(name: str)->Location:
 
 #routes
 
-@app.get("/locations/{name}")
+@app.get("/location/{name}")
 def get_person_location(name: str, location: Annotated[Location, Depends(get_Location_or_404)]):
     return location
 
